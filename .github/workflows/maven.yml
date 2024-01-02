@@ -37,8 +37,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ barathag }}
-          password: ${{ barath638 }}
+          username: ${{ secrets.Docker_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Log in to the Container registry
         uses: docker/login-action@v2
