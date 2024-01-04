@@ -76,7 +76,7 @@ jobs:
     needs: docker
     steps: 
       - name: Deploy to Kubernetes
-        uses: kubectl/kubectl@v0.9.6
+        uses: kubectl/kubectl@v1.28.2
         with:
           command: apply -f deployment.yaml
         env:
